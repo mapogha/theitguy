@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --color-primary:#088178;
+    --color-secondary:#00bf8e;
+    --color-black:#090909;
+    --color-light:rgba(255,255,255,0.7);
+    --color-bright:#E3E6F3;
+    --color-white:white;
+
+    --container-width-1g:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition: all 400ms ease;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: var(--color-black);
+    background: var(--color-bright);
+
+}
+h1,
+h2,
+h3,
+h4,
+h5{
+    line-height: 1.2;
+}
+h1{
+    font-size: 2.4rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.3rem;
+}
+.container{
+    width: var(--container-width-1g);
+    margin: 0 auto;
+}
+#btn-primary{
+    background-color: var(--color-primary);
+    color:var(--color-white);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+    border-radius: 4px;
+
+}
+#btn-primary:hover{
+    background: var(--color-secondary);
+    color: var(--color-black);
+    border-color: var(--color-white);
+}
+/* nav bar  */
+nav{
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+.nav__container{
+    height: 100%;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20rem;
+}
+.nav__container a{
+    margin-left: 2px;
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+.nav__container a:hover{
+    color: var(--color-black);
+    transition: var(--transition);
+}
+.nav__menu a{
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+.nav__menu a:hover{
+    color: var(--color-black);
+    transition: var(--transition);
+}
+.nav__menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.nav__container a{
+    text-decoration: none;
+}
+/* header css */
+header{
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70wh;
+    margin-bottom: 5rem;
+    
+}
+.header__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+    
+    margin-top: 10px;
+}
+.header__left{
+    margin-left: 50px;
+}
+.header__right-image img {
+    border-radius: 50%; /* This will make the image round */
+    padding-left: 10px;
+}
+.about{
+    background-color: var(--color-white);
+    margin-top: 5px;
+
+}
+
+.about-title h1{
+    margin-left: 50%;
+    color: var(--color-primary);
+}
+.about-body{
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* gap: 2rem; */
+}
+.about-image img{
+    height: 50vh;
+    margin-left: 50px;
+}
+.about-info a{
+    font-size: 1rem;
+}
+
+/* qualifications css */
+.quality-container{
+    
+    background-color: var(--color-white);
+    
+}
+.quality-body{
+
+    background-color: var(--color-white); 
+    height: 50vh;   
+}
+.quality-title h1{
+    margin-left: 30%;
+}
+.qualification-brief{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+.qualification-brief h3{
+    margin-left: 50px;
+}
+.border-left{
+    margin-top: 20px;
+    margin-left: 50px;
+    border-left: 2px solid var(--color-secondary);
+}
+.border-content{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.green{
+    color: var(--color-primary);
+}
+/* skills container css */
+.skills-container{
+    /* background-color: blue; */
+    margin-top: 40px;
+    height: 40vh;    
+}
+.skills-title h3{
+    margin-left: 50%;
+}
+#slideshow-container{
+    margin-top: 10px;
+    /* background-color: aquamarine; */
+    display: flex;
+    gap: 1rem;
+    margin-left: 50px;
+}
+.slideshow-box{
+    
+    height: 50vh;
+}
+.img{
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.slideshow-box-1{
+    background-color: var(--color-bright);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.slideshow-box-0{
+    background-color: var(--color-bright);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.slideshow-box-2{
+    background-color: var(--color-bright);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.slideshow-box-3{
+    background-color: var(--color-bright);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    
+}
+.p{
+    border-top: 1px solid var(--color-black);
+}
+.slideshow-box-0:hover{
+    background-color: var(--color-white);
+    transition: var(--transition);
+    cursor: pointer;   
+}
+.slideshow-box-1:hover{
+    background-color: var(--color-white);
+    transition: var(--transition);
+    cursor: pointer;   
+}
+.slideshow-box-2:hover{
+    background-color: var(--color-white);
+    transition: var(--transition);
+    cursor: pointer;   
+}
+.slideshow-box-3:hover{
+    background-color: var(--color-white);
+    transition: var(--transition);
+    cursor: pointer;   
+}
+.slideshow-box-4:hover{
+    background-color: var(--color-white);
+    transition: var(--transition);
+    cursor: pointer;   
+}
+/* contants css */
+.contacts-container {
+    
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the header */
+.contacts-head h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* Style the form */
+.contacts-details form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the form labels */
+.contacts-details label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Style the form inputs */
+.contacts-details input,
+.contacts-details textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the form button */
+.contacts-details button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add some hover effect to the button */
+.contacts-details button:hover {
+    background-color: var(--color-secondary);
+    transition: var(--transition);
+}
+
+/* footer css */
+/* Apply basic styling to the footer */
+.footer {
+    margin-top: 40px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Center the content within the container */
+.footer-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style the social media icons */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+/* Add hover effect to social media icons */
+.social-media i:hover {
+    color: #55acee; /* Change to the color of your choice */
+}
+
+/* Adjust styles for specific social media icons */
+.social-media i.fa-facebook-f:hover {
+    color: #1877f2; /* Facebook blue */
+}
+
+.social-media i.fa-twitter:hover {
+    color: #1da1f2; /* Twitter blue */
+}
+
+.social-media i.fa-instagram:hover {
+    color: #c13584; /* Instagram pink */
+}
+
+
